@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+#top {
+	text-align: center;
+}
+
+#top hr {
+	background: #E6E6E6;
+	height: 3px;
+}
+
+#center {
+	text-align: center;
+}
+
+#center form table {
+	background: #E6E6E6;
+	padding: 20px 20px 20px 20px;
+	margin: auto; /* 配合div 进行表格居中 */
+}
+
+td {
+	padding: 0px 10px 20px 0px;
+	font: 20px 宋体;
+}
+
+.td_right {
+	text-align: right;
+}
+
+input {
+	font: 20px 宋体;
+}
+
+p {
+	
+	color: #FF0000;
+	font:small 宋体;
+}

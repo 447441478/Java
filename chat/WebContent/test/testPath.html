@@ -1,0 +1,48 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta charset="UTF-8">  
+<title>Insert title here</title>  
+</head>  
+<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>  
+<script type="text/javascript">  
+    $(function(){  
+        var strFullPath=window.document.location.href;  
+        var strPath=window.document.location.pathname; 
+        alert(window.document.location.path);
+        var pos=strFullPath.indexOf(strPath);  
+        var prePath=strFullPath.substring(0,pos);  
+        var postPath=strPath.substring(0,strPath.substr(1).indexOf('/')+1);  
+        var basePath = prePath;  
+        basePath = prePath + postPath;    
+        $("#path").text(basePath);  
+        //以上内容为获取项目根路径的完整代码  
+          
+        //以下内容为测试内容  
+        var port  = window.location.port;  
+        var protocol  = window.location.protocol;  
+        var hash  = window.location.hash;  
+        var host  = window.location.host;  
+        var search  = window.location.search;  
+        $("#href").text(strFullPath);  
+        $("#pathname").text(strPath);  
+        $("#protocol").text(protocol);  
+        $("#hash").text(hash);  
+        $("#host").text(host);  
+        $("#port").text(port);  
+        $("#search").text(search);  
+    });  
+</script>  
+<body>  
+    <div>  
+        <p>项目路径：<span  id="path"></span></p>  
+        <p>href：<span  id="href"></span></p>  
+        <p>pathname：<span  id="pathname"></span></p>  
+        <p>port：<span  id="port"></span></p>  
+        <p>protocol：<span  id="protocol"></span></p>  
+        <p>hash：<span  id="hash"></span></p>  
+        <p>host：<span  id="host"></span></p>  
+        <p>search：<span  id="search"></span></p>  
+    </div>  
+</body>  
+</html>
