@@ -1,4 +1,4 @@
-package cn.hncu.dom4j;
+﻿package cn.hncu.dom4j;
 
 import java.io.FileWriter;
 import java.io.PrintWriter;
@@ -176,6 +176,15 @@ public class Dom4jDemo {
 		//注意关流---不仅考虑到安全性，字符流关流前还会刷一下缓存。
 		writer.close();
 	}
+	
+	////////dom4j+Xpath技术演示,注意要导一个支持jar包:jaxen////////////////////
+	/*
+	 * 使用xpath时，dom4j的代码套路:
+	 *  1) 通过dom调用Node中的如下方法进行节点选择(有时也选择对象如属性值)，参数用xpath表达式:
+	 *  2) 一点小细节: 以上3个方法是Node的，因此任意节点对象都可以调用，但结果
+	 *   却是dom下符合xpath的所有节点或对象，不是当前调用节点的子树范围(局部),
+	 *   而是整棵树(全局)，因此为避免歧义，建议使用dom调用
+	 */
 	
 	@Test
 	public void xpathHello() {
