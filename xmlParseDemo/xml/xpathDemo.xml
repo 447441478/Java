@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<root>
+	<aaa id="ra">
+		<bbb id="rab"></bbb>
+		<ccc id="rac">
+			<bbb id="racb"></bbb>
+		</ccc>
+	</aaa>
+	<bbb id="rb">
+		<ccc id="rbc"></ccc>
+	</bbb>
+</root>
